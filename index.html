@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slow Story English Publisher</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f6f0df; --fg:#2e3a3b; --accent:#2e5f63; --muted:#7a4a2e; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1f2526; --fg:#e8e4d8; --accent:#7fc4c9; --muted:#d9a06f; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px; }
+  h1 { color:var(--accent); font-size:2rem; margin:0 0 8px; }
+  h2 { color:var(--accent); font-size:1.25rem; margin-top:32px; }
+  a { color:var(--accent); }
+  .muted { color:var(--muted); }
+  footer { margin-top:48px; font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Slow Story English Publisher</h1>
+  <p class="muted">Internal publishing tool for the YouTube channel <a href="https://www.youtube.com/@slowstorywithlucas">Slow Story English</a>.</p>
+
+  <h2>What it is</h2>
+  <p>Slow Story English Publisher is a command-line tool used by the owner of the Slow Story English channel to publish the channel's own videos: it uploads a finished video file, sets its title, description, tags, thumbnail, subtitles and schedule, and adds it to a playlist. It also updates the channel's description, keywords and banner.</p>
+
+  <h2>Who uses it</h2>
+  <p>Only the channel owner. The tool is not distributed to the public and does not accept other users' accounts.</p>
+
+  <h2>How it uses the YouTube API</h2>
+  <ul>
+    <li>Uploads videos to the owner's channel (<code>videos.insert</code>) and sets thumbnails and captions.</li>
+    <li>Updates the owner's channel branding (<code>channels.update</code>, <code>channelBanners.insert</code>).</li>
+    <li>Creates playlists and adds the uploaded videos to them.</li>
+  </ul>
+  <p>It never reads, downloads or modifies content from other channels.</p>
+
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:sarlon.jean@gmail.com">sarlon.jean@gmail.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
